@@ -1,0 +1,151 @@
+{
+  "@graph": [
+    {
+      "@id": "#/encodes",
+      "@type": [
+        "movies:Movie",
+        "file:///Users/nschejtman/mulesoft/aml-js-example/dialect.yaml#/declarations/Movie",
+        "meta:DialectDomainElement",
+        "doc:DomainElement"
+      ],
+      "movies:title": "Boca Juniors 3D: The movie",
+      "movies:directedBy": {
+        "@id": "#/encodes/directedBy"
+      },
+      "sourcemaps:sources": [
+        {
+          "@id": "#/encodes/source-map"
+        }
+      ]
+    },
+    {
+      "@id": "#/encodes/directedBy",
+      "@type": [
+        "movies:Director",
+        "file:///Users/nschejtman/mulesoft/aml-js-example/dialect.yaml#/declarations/Director",
+        "meta:DialectDomainElement",
+        "doc:DomainElement"
+      ],
+      "schema:name": "Rodrigo",
+      "schema:surname": "Vila",
+      "sourcemaps:sources": [
+        {
+          "@id": "#/encodes/directedBy/source-map"
+        }
+      ]
+    },
+    {
+      "@id": "#/encodes/source-map",
+      "@type": [
+        "sourcemaps:SourceMap"
+      ],
+      "sourcemaps:lexical": [
+        {
+          "@id": "#/encodes/source-map/lexical/element_2"
+        },
+        {
+          "@id": "#/encodes/source-map/lexical/element_0"
+        },
+        {
+          "@id": "#/encodes/source-map/lexical/element_1"
+        }
+      ]
+    },
+    {
+      "@id": "#/encodes/directedBy/source-map",
+      "@type": [
+        "sourcemaps:SourceMap"
+      ],
+      "sourcemaps:lexical": [
+        {
+          "@id": "#/encodes/directedBy/source-map/lexical/element_2"
+        },
+        {
+          "@id": "#/encodes/directedBy/source-map/lexical/element_0"
+        },
+        {
+          "@id": "#/encodes/directedBy/source-map/lexical/element_1"
+        }
+      ]
+    },
+    {
+      "@id": "#/encodes/source-map/lexical/element_2",
+      "sourcemaps:element": "movies:title",
+      "sourcemaps:value": "[(2,0)-(3,0)]"
+    },
+    {
+      "@id": "#/encodes/source-map/lexical/element_0",
+      "sourcemaps:element": "movies:directedBy",
+      "sourcemaps:value": "[(3,11)-(5,15)]"
+    },
+    {
+      "@id": "#/encodes/source-map/lexical/element_1",
+      "sourcemaps:element": "file:///Users/nschejtman/mulesoft/aml-js-example/instance.yaml#/encodes",
+      "sourcemaps:value": "[(2,0)-(5,15)]"
+    },
+    {
+      "@id": "#/encodes/directedBy/source-map/lexical/element_2",
+      "sourcemaps:element": "schema:name",
+      "sourcemaps:value": "[(4,2)-(5,0)]"
+    },
+    {
+      "@id": "#/encodes/directedBy/source-map/lexical/element_0",
+      "sourcemaps:element": "schema:surname",
+      "sourcemaps:value": "[(5,2)-(5,15)]"
+    },
+    {
+      "@id": "#/encodes/directedBy/source-map/lexical/element_1",
+      "sourcemaps:element": "file:///Users/nschejtman/mulesoft/aml-js-example/instance.yaml#/encodes/directedBy",
+      "sourcemaps:value": "[(4,0)-(5,15)]"
+    },
+    {
+      "@id": "",
+      "@type": [
+        "meta:DialectInstance",
+        "doc:Document",
+        "doc:Fragment",
+        "doc:Module",
+        "doc:Unit"
+      ],
+      "meta:definedBy": [
+        {
+          "@id": "./dialect.yaml"
+        }
+      ],
+      "doc:encodes": {
+        "@id": "#/encodes"
+      },
+      "doc:version": "3.1.0",
+      "doc:root": true,
+      "sourcemaps:sources": [
+        {
+          "@id": "#/source-map"
+        }
+      ]
+    },
+    {
+      "@id": "#/source-map",
+      "@type": [
+        "sourcemaps:SourceMap"
+      ],
+      "sourcemaps:lexical": [
+        {
+          "@id": "#/source-map/lexical/element_0"
+        }
+      ]
+    },
+    {
+      "@id": "#/source-map/lexical/element_0",
+      "sourcemaps:element": "file:///Users/nschejtman/mulesoft/aml-js-example/instance.yaml",
+      "sourcemaps:value": "[(2,0)-(5,15)]"
+    }
+  ],
+  "@context": {
+    "@base": "file:///Users/nschejtman/mulesoft/aml-js-example/instance.yaml",
+    "movies": "http://schema.org/movies/",
+    "doc": "http://a.ml/vocabularies/document#",
+    "sourcemaps": "http://a.ml/vocabularies/document-source-maps#",
+    "meta": "http://a.ml/vocabularies/meta#",
+    "schema": "http://schema.org/"
+  }
+}
